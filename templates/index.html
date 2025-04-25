@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #6B5B95;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        form {
+            display: inline-block;
+            background-color: #92A8D1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            border: 1px solid #939597;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Crime Rate Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="Year">Year:</label><br>
+        <input type="text" id="Year" name="Year" required><br>
+        
+        <label for="Month">Month:</label><br>
+        <input type="text" id="Month" name="Month" required><br>
+        
+        <label for="Primary Type">Primary Type:</label><br>
+        <input type="text" id="Primary Type" name="Primary Type" required><br>
+        
+        <label for="place">Place:</label><br>
+        <input type="text" id="place" name="place" required><br>
+        
+        <label for="District">District:</label><br>
+        <input type="text" id="District" name="District" required><br>
+        
+        <label for="Community Area">Community Area:</label><br>
+        <input type="text" id="Community Area" name="Community Area" required><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</div>
+
+</body>
+</html>

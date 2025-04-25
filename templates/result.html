@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #92A8D1;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .result-box {
+            background-color: #F7CAC9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Prediction Result</h1>
+    <div class="result-box">
+        <h2>The Predicted Crime Rate is: {{ prediction }}</h2>
+    </div>
+</div>
+
+</body>
+</html>
