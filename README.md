@@ -56,15 +56,15 @@ python app.py
 ### 3. Open in browser
 
 Once the Flask server is running, open your web browser and go to:
-
+```bash
 http://127.0.0.1:5000/
-
+```
 
 You’ll see the home page with a form. Fill in the required crime-related features and submit the form to receive a predicted crime rate based on the trained XGBoost model.
 
 ---
 
-### Future Enhancements
+## Future Enhancements
 
 Here are some potential improvements for this project:
 
